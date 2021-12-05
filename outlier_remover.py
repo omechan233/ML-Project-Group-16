@@ -28,12 +28,3 @@ def outlier_removal(data, cols):
     row -= len(data.index)
     print(str(row) + " outliers dropped.")
     return data
-
-
-def main():
-    cols = ['Duration', 'NumSubscribers', 'ViewCount']
-    data = pandas.read_csv("data_youtube.csv")
-    outlier_removal(data, cols)
-
-
-main()
